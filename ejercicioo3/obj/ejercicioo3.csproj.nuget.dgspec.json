@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicio3\\ejercicio3.csproj": {}
+    "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicioo3\\ejercicioo3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicio3\\ejercicio3.csproj": {
+    "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicioo3\\ejercicioo3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicio3\\ejercicio3.csproj",
-        "projectName": "ejercicio3",
-        "projectPath": "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicio3\\ejercicio3.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicioo3\\ejercicioo3.csproj",
+        "projectName": "ejercicioo3",
+        "projectPath": "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicioo3\\ejercicioo3.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicio3\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\C#\\Practica-de-Ejercicios-1\\ejercicioo3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
