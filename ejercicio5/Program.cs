@@ -88,4 +88,3 @@ public class GestionTurnosClinica // nombre de la clase
         Console.WriteLine("\nFin del programa!!");
     }
 }
-*

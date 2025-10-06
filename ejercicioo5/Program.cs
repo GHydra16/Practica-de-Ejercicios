@@ -79,7 +79,7 @@ const int totalPacientes = 20; // Número total de pacientes a registrar
 
         // Calculamos el promedio general y por grupo (solo si el grupo tiene personas).
         double promedioGeneral = (double)sumaGeneral / totalPacientes;
-        Console.WriteLine("\n=== Promedios de edad ===");
+        Console.WriteLine("\n//// Promedios de edad ////");
         Console.WriteLine($"Promedio general: {promedioGeneral:F2}");
 
         if (ninos > 0)
