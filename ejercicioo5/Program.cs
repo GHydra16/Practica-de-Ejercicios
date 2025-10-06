@@ -1,40 +1,50 @@
 ﻿// Descripcion: reto de registrar las edades de 20 pacientes.
-        // Después, los clasificamos por grupo de edad y analizamos la distribución.
+// Después, los clasificamos por grupo de edad y analizamos la distribución.
+
+// se usaron arreglos: uno para guardar las edades y otro para contar cuántos hay en cada grupo. 
+//la cantidad de arreglos usados fueron 1, el cual fue un arreglo para guardar las edades de los pacientes.
 
 
 using System; // Asegúrate de que el espacio de nombres sea correcto según tu estructura de carpetas.
 
-public class GestionTurnosClinica
+public class GestionTurnosClinica // Clase principal del programa
 {
-    public static void Main(string[] args)
+    public static void Main(string[] args) // Método principal, punto de entrada del programa
     {
 Console.WriteLine("//// Gestión de turnos en una clínica /////\n");
 
-const int totalPacientes = 20; // número fijo de pacientes
+const int totalPacientes = 20; // Número total de pacientes a registrar
 
         // Acá creamos el arreglo para guardar las edades.
-        int[] edades = new int[totalPacientes];
+        int[] edades = new int[totalPacientes]; // arreglo para las edades, tamaño fijo de 20
 
         // Estas variables contarán cuántos pacientes hay en cada grupo.
-        int ninos = 0, jovenes = 0, adultos = 0, mayores = 0;
+        int ninos = 0, jovenes = 0, adultos = 0, mayores = 0; // contadores por grupo
 
         // También vamos a guardar las sumas para calcular los promedios.
-        int sumaGeneral = 0, sumaNinos = 0, sumaJovenes = 0, sumaAdultos = 0, sumaMayores = 0;
+        int sumaGeneral = 0, sumaNinos = 0, sumaJovenes = 0, sumaAdultos = 0, sumaMayores = 0; // sumas por grupo
 
         Console.WriteLine("Ingrese la edad de los 20 pacientes:");
         for (int i = 0; i < totalPacientes; i++)
+        // i va de 0 a 19, i<totalPacientes e i++ es lo mismo que i=i+1, y es para incrementar i en 1 cada vez
+        // quiere decir que se repite 20 veces (0, 1, 2, ..., 19)
         {
             
             edades[i] = LeerEntero($"  Edad del paciente #{i + 1}: ", 0, 120);
+            // se usa i+1 para mostrar al usuario índices desde 1, o sea que el primer paciente es #1
+            //EL 0 y 120 son los valores mínimo y máximo permitidos para la edad.
 
             // Clasificamos según la edad.
             int edad = edades[i];
-            sumaGeneral += edad; // acumulamos para el promedio total
+            sumaGeneral += edad;
+            // acumulamos para el promedio total, EL += es lo mismo que sumaGeneral = sumaGeneral + edad
+            // se interpreta como "sumaGeneral más igual edad" Lo que sig que se acumula la edad en sumaGeneral
+            // cada vez que se ingresa una edad, se suma a la variable sumaGeneral
 
             // Acá vamos agrupando cada edad en su categoría.
             if (edad <= 12)
             {
-                ninos++;
+                ninos++; // incrementa el contador de niños en 1
                 sumaNinos += edad;
             }
             else if (edad <= 25)
