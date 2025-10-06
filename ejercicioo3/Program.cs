@@ -3,6 +3,8 @@
 // Muestra el resultado y el origen de cada dato.
 // Incluye validación básica de entradas.
 
+// los arreglos utilizados fueron 3, dos para guardar los valores ingresados por 
+//el usuario y uno para guardar el resultado de la mezcla de ambos arreglos.
 
 
 using System; // Necesario para usar Console y otras funcionalidades básicas de el sistema
@@ -39,7 +41,7 @@ public class IntercalarArreglos // Clase principal del programa
         Console.WriteLine("\nIntroduce los valores del primer arreglo:(enter para el siguiente valor)");
         for (int i = 0; i < n; i++)
         {
-            arr1[i] = LeerEntero($"  arr1[{i + 1}]: ");
+            arr1[i] = LeerEntero($"  arr1[{i + 1}]: "); // se usa i+1 para mostrar al usuario índices desde 1
         }
 
         // Capturar los valores del segundo arreglo
@@ -68,7 +70,7 @@ public class IntercalarArreglos // Clase principal del programa
         }
 
         // Mostrar el arreglo intercalado
-        Console.WriteLine("\n=== Arreglo intercalado ===");
+        Console.WriteLine("\n//// Arreglo intercalado ////");
         Console.WriteLine("[{0}]", string.Join(", ", resultado));
 
         // Mostrar el origen de cada valor
