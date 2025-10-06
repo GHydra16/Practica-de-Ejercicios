@@ -4,26 +4,26 @@ public class GestionTurnosClinica // nombre de la clase
 {
     public static void Main(string[] args) // punto de entrada del programa
     {
-        Console.WriteLine("Reto 5: Gestión de turnos en una clínica");
+        Console.WriteLine(": Gestión de turnos en una clínica");
         Console.WriteLine("Se registrarán las edades de 20 pacientes.\n");
 
-        // 1) Arreglo para guardar las 20 edades
+        //  Arreglo para guardar las 20 edades
         int[] edades = new int[20];
 
-        // 2) Variables para conteo por grupo
+        //  Variables para conteo por grupo
         int nNinos = 0;    // 0–12
         int nJovenes = 0;  // 13–25
         int nAdultos = 0;  // 26–60
         int nMayores = 0;  // >60
 
-        // 3) Variables para sumar edades (sirven para sacar promedios)
+        //  Variables para sumar edades (sirven para sacar promedios)
         int sumaTotal = 0;
         int sumaNinos = 0;
         int sumaJovenes = 0;
         int sumaAdultos = 0;
         int sumaMayores = 0;
 
-        // 4) Pedimos y clasificamos las 20 edades
+        //  Pedimos y clasificamos las 20 edades
         for (int i = 0; i < edades.Length; i++) // usamos for para recorrer las 20 posiciones
         {
             Console.Write("Edad del paciente " + (i + 1) + ": ");
@@ -55,7 +55,7 @@ public class GestionTurnosClinica // nombre de la clase
             }
         }
 
-        // 5) Cálculo de promedios
+        //  Cálculo de promedios
         // Usamos cast a double para que salga con decimales.
         double promedioGeneral = sumaTotal / 20.0;
 
@@ -65,20 +65,20 @@ public class GestionTurnosClinica // nombre de la clase
         double promAdultos = (nAdultos > 0) ? (sumaAdultos / (double)nAdultos) : 0.0;
         double promMayores = (nMayores > 0) ? (sumaMayores / (double)nMayores) : 0.0;
 
-        // 6) Resultados: cuántos hay en cada grupo
+        //  Resultados: cuántos hay en cada grupo
         Console.WriteLine("\n--- Resultados ---");
         Console.WriteLine("Niños (0–12): " + nNinos);
         Console.WriteLine("Jóvenes (13–25): " + nJovenes);
         Console.WriteLine("Adultos (26–60): " + nAdultos);
         Console.WriteLine("Mayores (>60): " + nMayores);
 
-        // 7) Alerta si hay más de 5 mayores
+        //  Alerta si hay más de 5 mayores
         if (nMayores > 5)
         {
             Console.WriteLine("\nALERTA: hay más de 5 personas mayores (>60). Riesgo alto.");
         }
 
-        // 8) Promedios: general y por grupo
+        //  Promedios: general y por grupo
         Console.WriteLine("\nPromedio de edad (general): " + promedioGeneral.ToString("0.00"));
         Console.WriteLine("Promedio Niños:   " + (nNinos   > 0 ? promNinos.ToString("0.00")   : "N/A"));
         Console.WriteLine("Promedio Jóvenes: " + (nJovenes > 0 ? promJovenes.ToString("0.00") : "N/A"));
@@ -88,3 +88,4 @@ public class GestionTurnosClinica // nombre de la clase
         Console.WriteLine("\nFin del programa!!");
     }
 }
+*
