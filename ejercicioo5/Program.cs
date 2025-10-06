@@ -8,7 +8,7 @@ public class GestionTurnosClinica
 {
     public static void Main(string[] args)
     {
-Console.WriteLine("=== Gestión de turnos en una clínica ===\n");
+Console.WriteLine("//// Gestión de turnos en una clínica /////\n");
 
 const int totalPacientes = 20; // número fijo de pacientes
 
@@ -64,7 +64,7 @@ const int totalPacientes = 20; // número fijo de pacientes
         // Acá verificamos si hay más de 5 personas mayores.
         if (mayores > 5)
         {
-            Console.WriteLine("\n⚠ Alerta: hay más de 5 personas mayores (alto riesgo).");
+            Console.WriteLine("\nAlerta: hay más de 5 personas mayores (alto riesgo).");
         }
 
         // Calculamos el promedio general y por grupo (solo si el grupo tiene personas).
@@ -81,7 +81,7 @@ const int totalPacientes = 20; // número fijo de pacientes
         if (mayores > 0)
             Console.WriteLine($"Promedio de mayores: {(double)sumaMayores / mayores:F2}");
 
-        Console.WriteLine("\n✅ Análisis completado.");
+        Console.WriteLine("\n Análisis completado.");
     }
 
     // Función auxiliar para leer enteros con validación y rango.
